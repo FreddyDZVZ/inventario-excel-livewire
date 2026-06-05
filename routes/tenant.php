@@ -15,7 +15,7 @@ Route::middleware([
 ])->group(function () {
     Route::get('/', function () {
         if (Auth::check()) {
-            return redirect()->route('tenant.dashboard');
+            return redirect()->route('tenant.admin.dashboard');
         }
 
         return redirect()->route('tenant.login');
@@ -23,7 +23,7 @@ Route::middleware([
 
     Route::get('/login', function () {
         if (Auth::check()) {
-            return redirect()->route('tenant.dashboard');
+            return redirect()->route('tenant.admin.dashboard');
         }
 
         return view('auth.tenant-login');
@@ -58,7 +58,7 @@ Route::middleware([
 
         $request->session()->regenerate();
 
-        return redirect()->route('tenant.dashboard');
+        return redirect()->route('tenant.admin.dashboard');
     })->name('tenant.login.submit');
 
     Route::post('/logout', function (Request $request) {
@@ -70,7 +70,32 @@ Route::middleware([
         return redirect()->route('tenant.login');
     })->middleware('auth')->name('tenant.logout');
 
-    Route::view('/inicio', 'tenant.dashboard')
-        ->middleware('auth')
-        ->name('tenant.dashboard');
+    Route::middleware('auth')->group(function () {
+        Route::view('/inicio', 'tenant.admin.dashboard')
+            ->name('tenant.admin.dashboard');
+
+        Route::view('/pos', 'tenant.admin.dashboard')
+            ->name('tenant.pos');
+
+        Route::view('/inventario', 'tenant.admin.dashboard')
+            ->name('tenant.inventory');
+
+        Route::view('/productos', 'tenant.admin.dashboard')
+            ->name('tenant.products');
+
+        Route::view('/ventas', 'tenant.admin.dashboard')
+            ->name('tenant.sales');
+
+        Route::view('/caja', 'tenant.admin.dashboard')
+            ->name('tenant.cash');
+
+        Route::view('/reportes', 'tenant.admin.dashboard')
+            ->name('tenant.reports');
+
+        Route::view('/usuarios', 'tenant.admin.dashboard')
+            ->name('tenant.users');
+
+        Route::view('/configuracion', 'tenant.admin.dashboard')
+            ->name('tenant.settings');
+    });
 });
