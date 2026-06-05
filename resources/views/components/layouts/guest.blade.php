@@ -45,7 +45,7 @@
             background: white;
             border-radius: 22px;
             padding: 30px;
-            box-shadow: 0 20px 45px rgba(0,0,0,.22);
+            box-shadow: 0 20px 45px rgba(0, 0, 0, .22);
         }
 
         .guest-card h2 {
@@ -142,6 +142,20 @@
             margin: 6px 0;
         }
 
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 16px;
+            font-weight: normal;
+            color: #334155;
+        }
+
+        .checkbox-row input {
+            width: auto;
+            margin: 0;
+        }
+
         .guest-footer {
             text-align: center;
             margin-top: 18px;
@@ -152,6 +166,22 @@
         .guest-footer a {
             color: white;
             font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 16px;
+                align-items: flex-start;
+            }
+
+            .brand h1 {
+                font-size: 26px;
+            }
+
+            .guest-card {
+                padding: 22px;
+                border-radius: 18px;
+            }
         }
     </style>
 </head>
@@ -167,7 +197,7 @@
 
     <div class="guest-footer">
         <span>¿Ya tienes una farmacia registrada?</span>
-        <a href="#">Iniciar sesión</a>
+        <a href="/login">Iniciar sesión</a>
     </div>
 </div>
 
