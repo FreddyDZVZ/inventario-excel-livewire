@@ -1,0 +1,12 @@
+[90m= [39m[
+    [34m"[39m[34mcentral_connection[39m[34m"[39m => [32m"[39m[32mpgsql[39m[32m"[39m,
+    [34m"[39m[34mtemplate_tenant_connection[39m[34m"[39m => [32m"[39m[32mpgsql[39m[32m"[39m,
+    [34m"[39m[34mprefix[39m[34m"[39m => [32m"[39m[32mtenant_[39m[32m"[39m,
+    [34m"[39m[34msuffix[39m[34m"[39m => [32m""[39m,
+    [34m"[39m[34mmanagers[39m[34m"[39m => [
+      [34m"[39m[34msqlite[39m[34m"[39m => [32m"[39m[32mStancl[39m\\[32mTenancy[39m\\[32mTenantDatabaseManagers[39m\\[32mSQLiteDatabaseManager[39m[32m"[39m,
+      [34m"[39m[34mmysql[39m[34m"[39m => [32m"[39m[32mStancl[39m\\[32mTenancy[39m\\[32mTenantDatabaseManagers[39m\\[32mMySQLDatabaseManager[39m[32m"[39m,
+      [34m"[39m[34mmariadb[39m[34m"[39m => [32m"[39m[32mStancl[39m\\[32mTenancy[39m\\[32mTenantDatabaseManagers[39m\\[32mMySQLDatabaseManager[39m[32m"[39m,
+      [34m"[39m[34mpgsql[39m[34m"[39m => [32m"[39m[32mStancl[39m\\[32mTenancy[39m\\[32mTenantDatabaseManagers[39m\\[32mPostgreSQLDatabaseManager[39m[32m"[39m,
+    ],
+  ]

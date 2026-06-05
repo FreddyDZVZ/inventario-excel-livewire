@@ -10,6 +10,9 @@ Route::get('/', function () {
 Route::view('/inicio', 'dashboard.index')
     ->name('dashboard.index');
 
+Route::view('/registro-farmacia', 'tenants.register')
+    ->name('tenants.register');
+
 Route::view('/inventario/subir', 'inventory.upload')
     ->name('inventory.upload');
 

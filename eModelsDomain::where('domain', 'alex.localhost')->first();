@@ -1,0 +1,25 @@
+[90m= [39m[34;4mIlluminate\Database\Eloquent\Collection[39;24m {#8422
+    [34mall[39m: [
+      [34;4mStancl\Tenancy\Database\Models\Domain[39;24m {#8419
+        [34mid[39m: [35m1[39m,
+        [34mdomain[39m: [32m"[39m[32mfarmacias-economicas.localhost[39m[32m"[39m,
+        [34mtenant_id[39m: [32m"[39m[32m9e84c53c-cc26-41e9-9f77-fb3d14e30d1e[39m[32m"[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-06-05 03:15:21[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-06-05 03:15:21[39m[32m"[39m,
+      },
+      [34;4mStancl\Tenancy\Database\Models\Domain[39;24m {#8418
+        [34mid[39m: [35m2[39m,
+        [34mdomain[39m: [32m"[39m[32mfarmacia-freddy.localhost[39m[32m"[39m,
+        [34mtenant_id[39m: [32m"[39m[32m064418d8-9b0a-4a4f-b8be-c26e5427e546[39m[32m"[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-06-05 03:31:34[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-06-05 03:31:34[39m[32m"[39m,
+      },
+      [34;4mStancl\Tenancy\Database\Models\Domain[39;24m {#8421
+        [34mid[39m: [35m3[39m,
+        [34mdomain[39m: [32m"[39m[32mfarmacia-hola.localhost[39m[32m"[39m,
+        [34mtenant_id[39m: [32m"[39m[32m05edf504-095e-4309-8148-2df5d641a506[39m[32m"[39m,
+        [34mcreated_at[39m: [32m"[39m[32m2026-06-05 03:32:33[39m[32m"[39m,
+        [34mupdated_at[39m: [32m"[39m[32m2026-06-05 03:32:33[39m[32m"[39m,
+      },
+    ],
+  }
